@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appy HTML Demo - Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar__left">
+                <a href="Index.html">
+                    <svg class="svglogo">
+                        <!-- Defs è un contenitore di elementi grafici(per lo più colori) su immagini e svg-->
+                        <defs><!-- LinearGradient determina la dissolvenza di un immagine da un colore ad un altro-->
+                            <linearGradient x1="26%" y1="100%" x2="100%" y2="100%" id="logo_a">
+                                <stop stop-color="#3ABAB9" offset="0%"></stop>
+                                <stop stop-color="#7F9CF5" offset="100%"></stop>
+                            </linearGradient>
+                            <linearGradient x1="26%" y1="100%" x2="100%" y2="100%" id="logo_b">
+                                <stop stop-color="#3ABAB4" offset="0%"></stop>
+                                <stop stop-color="#3ABAB4" stop-opacity="0" offset="100%"></stop>
+                            </linearGradient>
+                        </defs> <!-- Path serve a creare una figura che seguirà gli spostamenti secondo i comandi-->
+                        <path d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z" fill="url(#logo_a)"></path>
+                        <path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z" fill="url(#logo_b)"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="navbar__center">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><!-- Resoruces è una lista dentro una lista, non so fare i menu a tendina cazz-->
+                        <a href="">Resources</a>
+                        <ul>
+                            <li><a href="HelpCenter.html">HelpCenter</a></li>
+                            <li><a href="404.html">404</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__right">
+                <!-- Div che serve a definire i bordi ad arrotondarli e centrare il contenuto-->
+                <div class="lightswitch_container">
+                    <!-- Pulsante singolo di acceso/spento per indicare dark e light-->
+                    <input type="checkbox" name="lightswitch" id="lightswitch">
+                    <label for="lightswitch">
+                        <!-- Svg per il disegno sole/luna e la cornice ?-->
+                        <svg></svg>
+                    </label>
+                </div>
+                <div>
+                    <a href="RequestCode.html">Request code</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <div class="header__top">
+                <div class="header__top-Hero">
+                    <h1>Your website, reimagined</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, recusandae quos qui nam fugiat cumque tenetur maiores cum provident corrupti iure officiis odio dolorum optio reiciendis, exercitationem unde est eligendi.</p>
+                    <form action="" method="post">
+                        <div>
+                            <input type="tel" name="Telephone" pattern="[0-9]{10}">
+                        </div>
+                        <div>
+                            <a href="index.html#0">Request code</a>
+                        </div>
+                    </form>
+                    <ul>
+                        <li><span><!--Segno accanto agli elementi della lista--></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et eveniet voluptate</li>
+                        <li><span></span>alias dolores tempore ipsam deleniti dolorum? Quibusdam sit impedit tenetur natus</li>
+                        <li><span></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, repellat consequatur</li>
+                    </ul>
+                </div>
+                <!--Il div iniziale che credevo inutile, dovrebbe servire da contenitore per riporre il comando di background-image e unire le immagini, per qualche motivo ancora non funziona in modo corretto-->
+                <div class="header__top-Phone">
+                    <img src="Images/PhoneCover.png" alt="Phone Cover">
+                    <img src="Images/PhoneBackgound.jpg" alt="Phone Backgound">
+                    <a href="Images/Keyboard.mp4">
+                        <img src="Images/PlayButton.svg" alt="Play Button">
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-panels">
+                    <div class="panel">
+                        <span>2.4M</span>
+                        <p>Days turn around</p>
+                    </div>
+                    <div class="panel">
+                        <span>7M</span>
+                        <p>Days turn around</p>
+                    </div>
+                    <div class="panel">
+                        <span>7.4%</span>
+                        <p>Days turn around</p>
+                    </div>
+                    <div class="panel">
+                        <span>49K</span>
+                        <p>Days turn around</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="section1__top">
+                <h2>From rough design files, to powerful products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit, nam dolorem modi vel harum dolore cumque fuga voluptas maxime</p>
+            </div>
+            <div class="section1__bottom"><!--Gestisce la parte di sotto della sezione 1-->
+                <div class="section1__bottom-images"><!--Gestisce le immagini della sezione1 sotto-->
+                    <div class="section1__bottom-images-1"><!--Gestisce lo spazio della singola immagine-->
+                        <img src="Images/Screamingkid.jpg" alt="Screaming Kid">
+                        <div><!--Link dentro dei div per definirene la posizione con css-->
+                            <a href="Index.html#0">Learn More</a>
+                        </div>
+                        <div>
+                            <a href="Index.html#0">Creative Service</a>
+                        </div>
+                    </div>
+                    <div class="section1__bottom-images-2">
+                        <img src="Images/headphonegirl.jpg" alt="Headphone Girl">
+                        <div>
+                            <a href="Index.html#0">Lean more</a>
+                        </div>
+                        <div>
+                            <a href="Index.html#0">Creative Service</a>
+                        </div>
+                    </div>
+                    <div class="section1__bottom-images-3">
+                        <img src="Images/microphone.jpg" alt="Microphone">
+                        <div>
+                            <a href="Index.html#0">Lean more</a>
+                        </div>
+                        <div>
+                            <a href="Index.html#0">Creative Service</a>
+                        </div>
+                    </div>
+                    <div class="section1__bottom-images-4">
+                        <img src="Images/guygothanded.jpg" alt="Guy Got Handed">
+                        <div>
+                            <a href="Index.html#0">Lean more</a>
+                        </div>
+                        <div>
+                            <a href="Index.html#0">Creative Service</a>
+                        </div>
+                    </div>
+                    <div class="section1__bottom-images-5">
+                        <img src="Images/coolhaatgirl.jpg" alt="Cool Hat Girl">
+                        <div>
+                            <a href="Index.html#0">Lean more</a>
+                        </div>
+                        <div>
+                            <a href="Index.html#0">Creative Service</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section1__bottom-arrows">
+                    <div class="section1__bottom-arrows-1">
+                        <button class="section1__bottom-arrows-1-left">
+                            <svg></svg>
+                        </button>
+                    </div>
+                    <div class="section1__bottom-arrows-2">
+                        <button class="section1__bottom-arrows-1-right">
+                            <svg></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section2__top">
+                <h2>Turn your ideas into reality in seconds</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci atque illo voluptatem at necessitatibus consequatur distinctio minus itaque suscipit ab sapiente nesciunt</p>
+            </div>
+            <div class="section2__bottom">
+                <div class="section2__bottom-menu">
+                    <div class="section2__bottom-menu-layout">
+                        <!--Bottoni modificati ma le scritte sono uscite dal contenitore e hanno preso funzione block-->
+                        <!--Meglio usare i button per le voci del menu oppure un anchor tag?-->
+                        <button class="section2__bottom-menu-layout-1">
+                            <svg></svg><!--L'SVG serve per la piccola immagine a sinistra del testo-->
+                            <span>Getting started</span>
+                        </button>
+                        <button class="section2__bottom-menu-layout-2">
+                            <svg></svg>
+                            <span>Collection list</span>
+                        </button>
+                        <button class="section2__bottom-menu-layout-3">
+                            <svg></svg>
+                            <span>Element Hierarchy</span>
+                        </button>
+                        <button class="section2__bottom-menu-layout-4">
+                            <svg></svg>
+                            <span>Styling Basics</span>
+                        </button>
+                        <button class="section2__bottom-menu-layout-5">
+                            <svg></svg>
+                            <span>Image Field</span>
+                        </button>
+                    </div>
+                </div> <!--come collegare i video alle voci del menu?-->
+                <div class="section2__bottom-videos">
+                    <!--layout serve per sistemare gli elementi all'interno della sezione2 bottom-->
+                    <div class="section2__bottom-layout-videos">
+                        <!--Ogni video ha bisogno di un div per distinguere i vari elementi al suo interno-->
+                        <div class="section2__bottom-layout-videos-1">
+                            <img src="Images/Videobackground.jpg" alt="VideoBackground"><!--lo sfondo del video-->
+                            <div class="section2__bottom-layout-videos-1-links">
+                                <!--Bottoni non modificabili su css-->
+                                <!--il pulsante play e il link sotto -->
+                                <div class="section2__bottom-layout-videos-1-links-1">
+                                    <a href="Index.html#0">
+                                        <img src="Images/PlayButton.svg" alt="PlayButton">
+                                    </a>
+                                </div>
+                                <div class="section2__bottom-layout-videos-1-links-2">
+                                    <a href="Index.html#0">Using index pages</a>
+                                    <span>2 Min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__bottom-layout-videos-2">
+                            <img src="Images/Videobackground.jpg" alt="VideoBackground">
+                            <div class="section2__bottom-layout-videos-2-links">
+                                <div class="section2__bottom-layout-videos-2-links-1">
+                                    <a href="Index.html#0">
+                                        <img src="Images/PlayButton.svg" alt="Play Button">
+                                    </a>
+                                </div>
+                                <div class="section2__bottom-layout-videos-2-links-2">
+                                    <a href="Index.html#0">Working with content</a>
+                                    <span>4 Min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__bottom-layout-videos-3">
+                            <img src="Images/Videobackground.jpg" alt="VideoBackground">
+                            <div class="section2__bottom-layout-videos-3-links">
+                                <div class="section2__bottom-layout-videos-3-links-1">
+                                    <a href="Index.html#0">
+                                        <img src="Images/PlayButton.svg" alt="Play Button">
+                                    </a>
+                                </div>
+                                <div class="section2__bottom-layout-videos-3-links-2">
+                                    <a href="Index.html#0">Using cover pages</a>
+                                    <span>7 Min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2__bottom-layout-videos-4">
+                            <img src="Images/Videobackground.jpg" alt="VideoBackground">
+                            <div class="section2__bottom-layout-videos-4-links">
+                                <div class="section2__bottom-layout-videos-4-links-1">
+                                    <a href="Index.html#0">
+                                        <img src="Images/PlayButton.svg" alt="Play Button">
+                                    </a>
+                                </div>
+                                <div class="section2__bottom-layout-videos-4-links-2">
+                                    <a href="Index.html#0">Intro to the style model</a>
+                                    <span>9 Min</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Ce ne sarebbero altri sei ma ho letto che sono fatti in modo diverso utilizzando il comando style ="dysplay:none"-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="section3__top">
+                <h2>Build and style every elementto perfection</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non et a eum pariatur modi eaque ratione cupiditate praesentium enim architecto impedit vero culpa sapiente</p>
+            </div>
+            <div class="section3__bottom">
+                <div class="section3__bottom-numbers">
+                    <div class="section3__bottom-numbers-1">1</div>
+                    <span><!--Linea di divisione--></span>
+                    <div class="section3__bottom-numbers-2">2</div>
+                    <span><!--Linea di divisione--></span>
+                    <div class="section3__bottom-numbers-3">3</div>
+                </div>
+                <div class="section3__bottom-images">
+                    <div class="images1">
+                        <img src="Images/ScreamKid+CoolHatGirl.jpg" alt="screaming kid and a cool girl with a hat">
+                        <img src="Images/PhoneCover.png" alt="telephone cover">
+                    </div>
+                    <div class="images2">
+                        <img src="Images/headphonegirl2.jpg" alt="girl with headphone and some texts">
+                        <img src="Images/PhoneCover.png" alt="telephone cover">
+                    </div>
+                    <div class="images3">
+                        <img src="Images/headphonegirl3.jpg" alt="girl with headphone and a menu">
+                        <img src="Images/PhoneCover.png" alt="telephone cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="section4__top">
+                <h2>Start building for free, then add a plan to go live</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio architecto aperiam voluptatem optio eius, neque necessitatibus</p>
+            </div>
+            <div class="section4__bottom">
+                <div class="section4__bottom-list">
+                    <div class="section4__bottom-list-layout">
+                        <div class="section4__bottom-list-layout-arrow">
+                            <svg class="arrow" width="86" height="25"><!--xmlsn cos'è??-->
+                                <path class="text-gray-600 c4u31" d="M80.959 10.448l-5.502-8.292 1.666-1.105 8.596 12.953-15.534.62-.08-1.999 9.944-.397-7.182-3.672C45.251-3.737 21.787 1.633 2.216 24.726L.69 23.435C20.836-.338 45.252-5.926 73.73 6.752l7.23 3.696z"></path>
+                            </svg>
+                        </div>
+                        <div>All plans included:</div><!--io avrei messo solo uno span, è corretto il div perché va modificata la sua struttura e sul div c'è più possibilità di lavorazione ??-->
+                        <ul>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Unlimited domains</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Unlimited web pages</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Conversion analytics</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>A/B testing</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Exclulsive channels</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Free resources</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Landing page builder</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <svg class="rightcheck" viewBox="0 0 12 12">
+                                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"></path>
+                                    </svg>
+                                    <span>Smart forms and reports</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section4__bottom-subscribePlans">
+                    <div class="section4__bottom-subscribePlans-layout">
+                        <div class="section4__bottom-subscribePlans-layout-notes">
+                            <div class="title">
+                                <span>Yearly</span>
+                            </div>
+                            <div class="sale">
+                                <span>-40%</span> 
+                            </div>
+                            <div class="SpanGroup">
+                                <span>$</span>
+                                <span>27</span>
+                                <span>/billed yearly</span>
+                            </div>
+                            <div class="paragraph">
+                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                        <div class="section4__bottom-subscribePlans-layout-link">
+                            <a href="Index.html#0">Go Premium</a>
+                        </div>
+                        <div class="section4__bottom-subscribePlans-layout-notes">
+                            <div class="title">
+                                <span>Monthly</span>
+                            </div>
+                            <div class="SpanGroup">
+                                <span>$</span>
+                                <span>47</span>
+                                <span>/billed yearly</span>
+                            </div>
+                            <div class="paragraph">
+                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                        <div class="section4__bottom-subscribePlans-layout-link">
+                            <a href="Index.html#0">Go Premium</a>
+                        </div>
+                        <div class="section4__bottom-subscribePlans-layout-notes">
+                            <div class="title">
+                                <span>Lifetime</span>
+                            </div>
+                            <div class="SpanGroup">
+                                <span>$</span>
+                                <span>127</span>
+                                <span>/one-time</span>
+                            </div>
+                            <div class="paragraph">
+                                <p>Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                        <div class="section4__bottom-subscribePlans-layout-link">
+                            <a href="Index.html#0">Go Premium</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="section5__layout">
+                <div class="section5__layout-comment">
+                    <div class="section5__layout-comment-image">
+                        <img src="Images/picprofileAndy.jpg" alt="Profile pircture of Andy">
+                    </div>
+                    <blockquote>This is a great app and the value is amazing. Since i purchased it i have been using it everyday! Highly recommend it.</blockquote>
+                    <div class="section5__layout-comment-cite">
+                        <span>--Andy Croll</span>
+                        <a href="Index.html#0">Appy.com</a>
+                    </div>
+                </div>
+                <div class="section5__layout-comment">
+                    <div class="section5__layout-comment-image">
+                        <img src="Images/picprofilePatricia.jpg" alt="Profile pircture of Patricia">
+                    </div>
+                    <blockquote>This is a great app and the value is amazing. Since i purchased it i have been using it everyday! Highly recommend it.</blockquote>
+                    <div class="section5__layout-comment-cite">
+                        <span>--Patricia Lepisov</span>
+                        <a href="Index.html#0">Nobi Bank</a>
+                    </div>
+                </div>
+                <div class="section5__layout-comment">
+                    <div class="section5__layout-comment-image">
+                        <img src="Images/picprofileZhenya.jpg" alt="Profile pircture of Zhenya">
+                    </div>
+                    <blockquote>This is a great app and the value is amazing. Since i purchased it i have been using it everyday! Highly recommend it.</blockquote>
+                    <div class="section5__layout-comment-cite">
+                        <span>--Zhenya Ritz</span>
+                        <a href="Index.html#0">Sync</a>
+                    </div>
+                </div>
+                <div class="section5__layout-comment">
+                    <div class="section5__layout-comment-image">
+                        <img src="Images/picprofileLisa.jpg" alt="Profile pircture of Lisa">
+                    </div>
+                    <blockquote>This is a great app and the value is amazing. Since i purchased it i have been using it everyday! Highly recommend it.</blockquote>
+                    <div class="section5__layout-comment-cite">
+                        <span>--Lisa Champ</span>
+                        <a href="Index.html#0">Appicu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section6">
+            <div class="section6__top">
+                <h2>Put clarity at the center of your website</h2>
+            </div>
+            <div class="section6__bottom">
+                <div class="section6__bottom-layout">
+                    <div class="section6__bottom-layout-box">
+                        <div class="logo">
+                            <svg class="logo1" viewBox="0 0 32 32">
+                                <path class="c4u31" d="M19 18.414l-4 4L9.586 17l.707-.707L12 14.586V8.414l-5-5L4.414 6l6.293 6.293-1.414 1.414L1.586 6 7 .586l7 7v5l8.463-8.463a3.828 3.828 0 115.414 5.414L21 16.414v6.172l5 5L28.586 25l-6.293-6.293 1.414-1.414L31.414 25 26 30.414l-7-7v-5zm-4 1.172L26.463 8.123a1.828 1.828 0 10-2.586-2.586L12.414 17 15 19.586zM11 30v2C4.925 32 0 27.075 0 21h2a9 9 0 009 9zm0-5v2a6 6 0 01-6-6h2a4 4 0 004 4z" fill-rule="nonzero"></path>
+                            </svg>
+                        </div>
+                        <div class="texts">
+                            <span>Simple sharing</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <a href="Index.html#0">
+                            <svg class="boxArrow" viewBox="0 0 24 24">
+                                <path class="c4u31" d="M13 11V5.057L22.72 12 13 18.943V13H2v-2h11zm2 4.057L19.28 12 15 8.943v6.114z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="section6__bottom-layout-box">
+                        <div class="logo">
+                            <svg class="logo2" viewBox="0 0 32 32">
+                                <path class="c4u31" d="M20.796 20l-1.677 7.264a6 6 0 01-7.302 4.471L0 28.781V11.54l.35-.3 9.457-8.107a3.751 3.751 0 015.29 5.29L11.175 13H28.5a3.5 3.5 0 012.6 1.156c.663.736.984 1.72.878 2.74-.252 1.808-1.817 3.143-3.622 3.104h-7.56zM2 27.22l10.303 2.575a4 4 0 004.868-2.98L19.204 18h9.173c.812.018 1.508-.575 1.615-1.345A1.5 1.5 0 0028.5 15H11.173a2 2 0 01-1.517-3.3l3.922-4.577a1.755 1.755 0 00-.597-2.733 1.751 1.751 0 00-1.872.262L2 12.46v14.76zM28 .585L29.414 2 23 8.414 21.586 7 28 .586zm-8.272 6.627l-1.94-.485 1.484-5.94 1.94.484-1.484 5.94zm3.544 5l-.485-1.94 5.94-1.486.486 1.94-5.94 1.486z" fill-rule="nonzero"></path>
+                            </svg>
+                        </div>
+                        <div class="texts">
+                            <span>Simple sharing</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <a href="Index.html#0">
+                            <svg class="boxArrow" viewBox="0 0 24 24">
+                                <path class="c4u31" d="M13 11V5.057L22.72 12 13 18.943V13H2v-2h11zm2 4.057L19.28 12 15 8.943v6.114z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="section6__bottom-layout-box">
+                        <div class="logo">
+                            <svg class="logo3" viewBox="0 0 32 32">
+                                <path class="c4u31" d="M19 5.612V25a6 6 0 11-2-4.472V0h2v2.961A5.98 5.98 0 0023.497 5a8.476 8.476 0 018.444 9.474l-.253 2.13-1.469-1.563A6.472 6.472 0 0025.5 13c-1.842 0-3.634-.6-5.103-1.713l1.206-1.594A6.455 6.455 0 0025.5 11c1.557 0 3.068.428 4.376 1.217A6.475 6.475 0 0023.5 7 7.981 7.981 0 0119 5.612zM13 29a4 4 0 100-8 4 4 0 000 8zM0 5V3h14v2H0zm0 5V8h14v2H0zm0 5v-2h14v2H0z" fill-rule="nonzero"></path>
+                            </svg>
+                        </div>
+                        <div class="texts">
+                            <span>Simple sharing</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <a href="Index.html#0">
+                            <svg class="boxArrow" viewBox="0 0 24 24">
+                                <path class="c4u31" d="M13 11V5.057L22.72 12 13 18.943V13H2v-2h11zm2 4.057L19.28 12 15 8.943v6.114z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="section6__bottom-layout-box">
+                        <div class="logo">
+                            <svg class="logo4" viewBox="0 0 32 32">
+                                <path class="c4u31" d="M20.243 6.757l.707.707-1.414 1.414-.707-.707a4 4 0 00-5.658 0l-.707.707-1.414-1.414.707-.707a6 6 0 018.486 0zm3.535-3.535l.707.707-1.414 1.414-.707-.707a9 9 0 00-12.728 0l-.707.707L7.515 3.93l.707-.707c4.296-4.296 11.26-4.296 15.556 0zM9 17.212V16a7 7 0 00-7-7H1V7h1a9 9 0 019 9v.788l2.302 5.18L11 23.117V24a4 4 0 01-4 4H5v3H3v-5h4a2 2 0 002-2v-2.118l1.698-.85L9 17.213zm12-.424V16a9 9 0 019-9h1v2h-1a7 7 0 00-7 7v1.212l-1.698 3.82 1.698.85V24a2 2 0 002 2h4v5h-2v-3h-2a4 4 0 01-4-4v-.882l-2.302-1.15L21 16.787zM16 12a1 1 0 110-2 1 1 0 010 2z" fill-rule="nonzero"></path>
+                            </svg>
+                        </div>
+                        <div class="texts">
+                            <span>Simple sharing</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <a href="Index.html#0">
+                            <svg class="boxArrow" viewBox="0 0 24 24">
+                                <path class="c4u31" d="M13 11V5.057L22.72 12 13 18.943V13H2v-2h11zm2 4.057L19.28 12 15 8.943v6.114z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section7">
+            <div class="section7-banner">
+                <div class="section7-banner-left">
+                    <h2>Free until you're ready to launch</h2>
+                </div>
+                <div class="section7-banner-right">
+                    <form class="section7-banner-right-form" action="" method="post">
+                        <input type="tel" placeholder="Phone number">
+                        <a href="Index.html#0">Request Code</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__left">
+                <div class="footer__left-logo">
+                    <a href="Index.html">
+                        <svg class="svglogo" viewBox="0 0 32 32">
+                            <defs>
+                                <linearGradient x1="26%" y1="100%" x2="100%" y2="100%" id="flogo_a">
+                                    <stop stop-color="#3ABAB4" offset="0%"></stop>
+                                    <stop stop-color="#7F9CF5" offset="100%"></stop>
+                                </linearGradient>
+                                <linearGradient x1="26%" y1="100%" x2="100%" y2="100%" id="flogo_b">
+                                    <stop stop-color="#3ABAB4" offset="0%"></stop>
+                                    <stop stop-color="#3ABAB4" stop-opacity="0" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z" fill="url(#flogo_a)"></path>
+                            <path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z" fill="url(#flogo_b)"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="Index.html#0">Drag And Drop</a></li>
+                        <li><a href="Index.html#0">Visual Studio X</a></li>
+                        <li><a href="Index.html#0">Easy Content</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="Index.html#0">Industries and tools</a></li>
+                        <li><a href="Index.html#0">Use cases</a></li>
+                        <li><a href="Index.html#0">Blog</a></li>
+                        <li><a href="Index.html#0">Online events</a></li>
+                        <li><a href="Index.html#0">Nostrud exercitation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="Index.html#0">Diversity & inclusion</a></li>
+                        <li><a href="Index.html#0">About us</a></li>
+                        <li><a href="Index.html#0">Press</a></li>
+                        <li><a href="Index.html#0">Customer stories</a></li>
+                        <li><a href="Index.html#0">Online communities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="Index.html#0">Documentation</a></li>
+                        <li><a href="Index.html#0">Tutorials & guides</a></li>
+                        <li><a href="Index.html#0">Webinars</a></li>
+                        <li><a href="Index.html#0">Open-source</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="subfooter__left">
+                    <div class="subfooter__left-credit">© Cruip.com. All rights reserved.</div>
+                </div>
+                <div class="subfooter__middle">
+                    <div class="subfooter__middle-link">
+                        <a href="Index.html#0">Terms</a>
+                        <span>-</span>
+                        <a href="Index.html#0">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="subfooter__right">
+                    <div class="subfooter__right-social">
+                        <ul>
+                            <li>
+                                <a href="Index.html#0">
+                                    <svg class="socialLogo" viewBox="0 0 32 32">
+                                        <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Index.html#0">
+                                    <svg class="socialLogo" viewBox="0 0 32 32">
+                                        <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Index.html#0">
+                                    <svg class="socialLogo" viewBox="0 0 32 32">
+                                        <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Index.html#0">
+                                    <svg class="socialLogo" viewBox="0 0 32 32">
+                                        <circle cx="20.145" cy="11.892" r="1"></circle>
+                                        <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z"></path>
+                                        <path d="M20 24h-8c-2.056 0-4-1.944-4-4v-8c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zm-8-14c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2v-8c0-.935-1.065-2-2-2h-8z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Index.html#0">
+                                    <svg class="socialLogo" viewBox="0 0 32 32">
+                                        <path d="M23.3 8H8.7c-.4 0-.7.3-.7.7v14.7c0 .3.3.6.7.6h14.7c.4 0 .7-.3.7-.7V8.7c-.1-.4-.4-.7-.8-.7zM12.7 21.6h-2.3V14h2.4v7.6h-.1zM11.6 13c-.8 0-1.4-.7-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4-.1.7-.7 1.4-1.4 1.4zm10 8.6h-2.4v-3.7c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.8h-2.4V14h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2h.1z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

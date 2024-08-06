@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Appy Demo</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar__left">
+                <a href="Index.html">
+                    <svg class="svglogo">
+                        <!-- Defs è un contenitore di elementi grafici(per lo più colori) su immagini e svg-->
+                        <defs><!-- LinearGradient determina la dissolvenza di un immagine da un colore ad un altro-->
+                            <linearGradient x1="26%" y1="100%" x2="100%" y2="100%" id="logo_a">
+                                <stop stop-color="#3ABAB9" offset="0%"></stop>
+                                <stop stop-color="#7F9CF5" offset="100%"></stop>
+                            </linearGradient>
+                            <linearGradient x1="26%" y1="100%" x2="100%" y2="100%" id="logo_b">
+                                <stop stop-color="#3ABAB4" offset="0%"></stop>
+                                <stop stop-color="#3ABAB4" stop-opacity="0" offset="100%"></stop>
+                            </linearGradient>
+                        </defs> <!-- Path serve a creare una figura che seguirà gli spostamenti secondo i comandi-->
+                        <path d="M32 16h-8a8 8 0 10-16 0H0C0 7.163 7.163 0 16 0s16 7.163 16 16z" fill="url(#logo_a)"></path>
+                        <path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16h8a8 8 0 1016 0h8z" fill="url(#logo_b)"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="navbar__center">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><!-- Resoruces è una lista dentro una lista, non so fare i menu a tendina cazz-->
+                        <a href="">Resources</a>
+                        <ul>
+                            <li><a href="HelpCenter.html">HelpCenter</a></li>
+                            <li><a href="404.html">404</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__right">
+                <!-- Div che serve a definire i bordi ad arrotondarli e centrare il contenuto-->
+                <div class="lightswitch_container">
+                    <!-- Pulsante singolo di acceso/spento per indicare dark e light-->
+                    <input type="checkbox" name="lightswitch" id="lightswitch">
+                    <label for="lightswitch">
+                        <!-- Svg per il disegno sole/luna e la cornice ?-->
+                        <svg></svg>
+                    </label>
+                </div>
+                <div>
+                    <a href="RequestCode.html">Request code</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>

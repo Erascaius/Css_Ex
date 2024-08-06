@@ -1,0 +1,77 @@
+.svglogo{
+    width: 32px;
+    height: 32px;
+}
+.lightswitch{
+    width: 44px;
+}
+.rightcheck{
+    width: 12px;
+    height: 12px;
+    color:green;
+}
+.socialLogo{
+    width: 32px;
+    height: 32px;
+}
+div.logo{
+    width: 32px;
+    height: 32px;
+}
+.boxArrow{
+    width: 24px;
+    height: 24px;
+}
+img[alt~=Profile]{
+    width: 56px;
+    height: 56px;
+    border-radius: 50px 50px 50px 50px;
+}
+img[alt~="girl"]{
+    width: 290px;
+    height: 624px;
+}
+img[alt~="telephone"]{
+    width: 344px;
+    height: 674px;
+}
+div.images3 img{
+    background-image: url("Images/PhoneCover.png"),url("Images/headphonegirl3.jpg");
+}
+div.section2__bottom img{
+    width: 352px;
+    height: 264px;
+}
+div.section2__bottom-menu-layout button{
+    width: 242px;
+    height: 40px;
+}
+div.section1__bottom-arrows button{
+    width: 56px;
+    height: 56px
+}
+div.section1__bottom-images img{
+    width: 512px;
+    height: 436px   ;
+}
+
+div.header__top-Phone img{
+    background-image: url("Images/PhoneCover.png"), url("Images/PhoneBackgound.jpg"), url("Images/PlayButton.svg");
+}
+
+img[src="Images/PhoneCover.png"]{
+    width: 344px;
+    height: 644px;
+}
+img[src="Images/PhoneBackgound.jpg"]{
+    width: 290px;
+    height: 624px;
+}
+img[src="Images/PlayButton.svg"]{
+    width: 96px;
+    height: 96px;
+}
+div.header__top-Phone{
+    width: 344px;
+    height: 674px;
+}
